@@ -1,0 +1,7 @@
+{
+  "itemDisplayName": "Processes media files using Azure Media Indexer V2",
+  "description": "This template deploys a Media Services Account and Storage Account before indexing the media.",
+  "summary": "Processes media files using Azure Media Indexer V2",
+  "githubUsername": "DaveSamuelson",
+  "dateUpdated": "2017-04-25"
+}
