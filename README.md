@@ -1,4 +1,5 @@
-# mediaindexer
+<h1>Media Indexer</h1>
+The purpose of this QuickStart template is to provision Azure resources that will enable media files to be uploaded to BLOB storage and processed by Azure Media Indexer V2 to provide captions and content that can be used by Azure Search.
 
 <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fdavesamuelson%2Fmediaindexer%2fmaster%2Fazuredeploy.json" target="_blank">
     <img src="http://azuredeploy.net/deploybutton.png"/>
@@ -7,10 +8,6 @@
   <img src="http://armviz.io/visualizebutton.png"/>
 </a>
 
-
-
-<h1>Media Indexer</h1>
-The purpose of this QuickStart template is to provision Azure resources that will enable media files to be uploaded to BLOB storage and processed by Azure Media Indexer V2 to provide captions and content that can be used by Azure Search.
 
 <h2>Pre-Requisites</h2>
 Before you can initiate the deployment of resources within this script, you  need:
