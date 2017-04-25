@@ -1,1 +1,49 @@
-
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "mediaAccountName": {
+      "type": "string",
+      "metadata": {
+        "description": "Globally unique name of the Media Services account to be created - lowercase letters or numbers with no spaces."
+      }
+    }, 
+    "storageAccountName": {
+      "type": "string",
+      "metadata": {
+        "description": "Globally unique name of the Storage Acount account to be created - lowercase letters or numbers with no spaces."
+      }
+    }    
+  },
+  "variables": {    
+  },
+  "resources": [
+    {
+      "name": "[parameters('mediaAccountName')]",
+      "type": "Microsoft.Media/mediaServices",
+      "apiVersion": "2015-10-01",
+      "location": "[resourceGroup().location]",
+      "dependsOn": [
+        "[resourceId('Microsoft.Storage/storageAccounts', parameters('storageAccountName'))]"
+      ],
+      "properties": {
+        "storageAccounts": [
+          {
+            "isPrimary": true,
+            "id": "[resourceId('microsoft.storage/storageaccounts/', parameters('storageAccountName'))]"
+          }
+        ]
+      }
+    },
+    {
+      "name": "[parameters('storageAccountName')]",
+      "type": "Microsoft.Storage/storageAccounts",
+      "apiVersion": "2016-01-01",
+      "kind": "Storage",
+      "location": "[resourceGroup().location]",
+      "sku": {
+        "name": "Standard_LRS"
+      }
+    }
+  ]
+}
