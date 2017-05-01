@@ -6,7 +6,7 @@ See the following resources:
   <li>https://azure.microsoft.com/en-gb/resources/samples/media-services-dotnet-functions-integration/</li>
   <li>https://www.videobreakdown.com/</li>
 </ul> 
-</br></br>
+
 
 <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fdavesamuelson%2Fmediaindexer%2fmaster%2Fazuredeploy.json" target="_blank">
     <img src="http://azuredeploy.net/deploybutton.png"/>
